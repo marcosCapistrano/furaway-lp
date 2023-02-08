@@ -1,16 +1,12 @@
 <script>
 	// @ts-nocheck
 
-	import productPreto from '$lib/assets/preto.jpg';
-	import productPretoCombo from '$lib/assets/preto_combo.jpg';
-	import productRosa from '$lib/assets/rosa.jpg';
-	import productRosaCombo from '$lib/assets/rosa_combo.jpg';
-	import productAzul from '$lib/assets/azul.jpg';
-	import productAzulCombo from '$lib/assets/azul_combo.jpg';
-	import productCinza from '$lib/assets/cinza.jpg';
-	import productCinzaCombo from '$lib/assets/cinza_combo.jpg';
-	import productRoxo from '$lib/assets/roxo.jpg';
-	import productRoxoCombo from '$lib/assets/roxo_combo.jpg';
+	import productCinza from '$lib/assets/products/cinza.jpg';
+	import productCinzaCombo from '$lib/assets/products/cinzaCombo.jpg';
+	import productRosa from '$lib/assets/products/rosa.jpg';
+	import productRosaCombo from '$lib/assets/products/rosaCombo.jpg';
+	import productVerde from '$lib/assets/products/verde.jpg';
+	import productVerdeCombo from '$lib/assets/products/verdeCombo.jpg';
 
 	let innerWidth = 0;
 	let innerHeight = 0;
@@ -35,9 +31,9 @@
 
 	let variants = [
 		{
-			name: 'Preto',
-			image: productPreto,
-			imageCombo: productPretoCombo,
+			name: 'Cinza',
+			image: productCinza,
+			imageCombo: productCinzaCombo,
 			id: '63255984'
 		},
 		{
@@ -47,23 +43,11 @@
 			id: '63255985'
 		},
 		{
-			name: 'Azul',
-			image: productAzul,
-			imageCombo: productAzulCombo,
+			name: 'Verde',
+			image: productVerde,
+			imageCombo: productVerdeCombo,
 			id: '63255986'
 		},
-		{
-			name: 'Cinza',
-			image: productCinza,
-			imageCombo: productCinzaCombo,
-			id: '63255987'
-		},
-		{
-			name: 'Roxo',
-			image: productRoxo,
-			imageCombo: productRoxoCombo,
-			id: '63255988'
-		}
 	];
 
 	let selectedVariant = '63255984';

@@ -1,39 +1,19 @@
 <script>
-	import Benefit from '$lib/components/Benefit.svelte';
-	import natural from '$lib/assets/natural.jpg';
-	import simples from '$lib/assets/simples.jpg';
-	import gel from '$lib/assets/gel.jpg';
-	import design from '$lib/assets/design.jpg';
-	const benefits = [
-		{
-			title: 'A Origem',
-			content:
-				'Podemos passar o dia inteiro varrendo e aspirando a casa, mas 100% dos pêlos vem de seu pet, destes, 83% ou mais podem ser removidos apenas passando a escova uma vez ao dia.',
-			// image: design,
-			direction: 'left'
-		},
-		{
-			title: 'A Escova',
-			content:
-				'A escova é construida com os materiais plástico, borracha, e aço inoxidável. Que pode ser simplesmente enxaguada após o uso. Sua função auto limpante faz com que até nos pets com maior incidência de queda de pelos a rotina seja fácil e rápida de ser aplicada',
-			image: gel,
-			direction: 'right'
-		},
-		{
-			title: 'Não apenas estética',
-			content:
-				'A escovação não é importante apenas por questões estéticas. Além de promover maior hidratação das peles e pelos, seu animal deixará de sofrer de excesso de calor e desconfortos causados pelo excesso de pelos.',
-			image: simples,
-			direction: 'left'
-		},
-		{
-			title: 'O Resultado',
-			content:
-				'Uma casa mais limpa com muito menos esforço. Uma amizade reforçada com o seu bixinho, com você e ele mais alegres e satisfeitos.',
-			image: natural,
-			direction: 'right'
-		}
-	];
+// @ts-nocheck
+
+	import Carousel from 'svelte-carousel';
+	import image1 from '$lib/assets/images/1.jpg';
+	import image2 from '$lib/assets/images/2.jpg';
+	import image3 from '$lib/assets/images/3.jpg';
+	import image4 from '$lib/assets/images/4.jpg';
+	import image5 from '$lib/assets/images/5.jpg';
+	import image6 from '$lib/assets/images/6.jpg';
+
+	let carousel;
+
+	const handleNextClick = () => {
+		carousel.goToNext();
+	};
 </script>
 
 <section class="benefits">
@@ -56,7 +36,10 @@
 		<h2>Com ela você deixará de:</h2>
 		<ul>
 			<li>Passar horas escovando manualmente o pet, tendo mais tempo para se divertirem.</li>
-			<li>Gastar dinheiro em escovas tradicionais que não são tão eficientes (e que por vezes machucam e estressam o animal)</li>
+			<li>
+				Gastar dinheiro em escovas tradicionais que não são tão eficientes (e que por vezes machucam
+				e estressam o animal)
+			</li>
 			<li>Se preocupar sempre que uma visita chega devido à sujeira espalhada</li>
 			<li>Perder tempo retirando nós e emaranhados no pêlo do pet. Seu amiguinho agradecerá!</li>
 			<li>Gastar dinheiro em serviços de tosa profissional.</li>
@@ -86,6 +69,16 @@
 		</ul>
 
 		<h1>Imagens</h1>
+		<div class="carousel-container">
+			<Carousel bind:this={carousel}>
+				<img src={image1} alt="produto" class="carousel-img"/>
+				<img src={image2} alt="produto" />
+				<img src={image3} alt="produto" />
+				<img src={image4} alt="produto" />
+				<img src={image5} alt="produto" />
+				<img src={image6} alt="produto" />
+			</Carousel>
+		</div>
 		<!-- <div class="row"> -->
 		<!-- </div> -->
 	</div>
@@ -131,6 +124,11 @@
 				font-size: var(--step-2);
 				color: red;
 			}
+		}
+
+		.carousel-container {
+			max-width: 500px;
+			margin: 0 auto;
 		}
 	}
 </style>
