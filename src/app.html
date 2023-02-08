@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<link rel="icon" href="%sveltekit.assets%/favicon.png" />
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-0LYGP9B8BT"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'G-0LYGP9B8BT');
+	</script>
+	<!-- Taboola Pixel Code -->
+	<script type='text/javascript'>
+		window._tfa = window._tfa || [];
+		window._tfa.push({ notify: 'event', name: 'page_view', id: 1517549 });
+		!function (t, f, a, x) {
+			if (!document.getElementById(x)) {
+				t.async = 1; t.src = a; t.id = x; f.parentNode.insertBefore(t, f);
+			}
+		}(document.createElement('script'),
+			document.getElementsByTagName('script')[0],
+			'//cdn.taboola.com/libtrc/unip/1517549/tfa.js',
+			'tb_tfa_script');
+	</script>
+	<!-- End of Taboola Pixel Code -->
+	<script src="https://kit.fontawesome.com/5bf1347c5d.js" crossorigin="anonymous"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap"
+		rel="stylesheet">
+
+	<meta name="viewport" content="width=device-width" />
+	%sveltekit.head%
+</head>
+
+<body data-sveltekit-preload-data="hover">
+	<div style="display: contents">%sveltekit.body%</div>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+$primaryColor: #06AA48;
+$primaryVColor: #262626;
+$secondaryColor: #001D3D;
+$secondaryVColor: #003566;
+$accentColor: #00a838;
+$accentVColor: #FFC300;
+
+$fontColor: #000;
+
+$defaultFont: "Montserrat", sans-serif;
+$normalWeight: 300;
+$boldWeight: 700;
+
+$gutter: 2%;
+
+@mixin gradient($startColor, $endColor) {
+    background: linear-gradient(to bottom, $startColor 0%, $endColor 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$startColor', endColorstr='$endColor', GradientType=0);
+    /* IE6-9 */
+
+}

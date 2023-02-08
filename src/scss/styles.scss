@@ -1,0 +1,16 @@
+@import "reset";
+@import "variables";
+
+@import "phone-default";
+
+@media only screen and (min-width: 600px) {
+    @import "tablet";
+}
+
+@media only screen and (min-width: 900px) {
+    @import "tablet-landscape";
+}
+
+@media only screen and (min-width: 1200px) {
+    @import "desktop";
+}
