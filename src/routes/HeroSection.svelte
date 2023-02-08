@@ -1,6 +1,5 @@
 <script>
 	import heroVideo from '$lib/assets/heroVideo.mp4';
-	import logo from '$lib/assets/logoBig.png';
 	import { onMount } from 'svelte';
 
 	let innerWidth = 0;
