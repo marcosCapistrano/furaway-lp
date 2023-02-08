@@ -12,7 +12,7 @@
 	let innerHeight = 0;
 	$: isSmallWindow = innerWidth < 600;
 
-	let endDate = new Date('Feb 01, 2023 23:59').getTime();
+	let endDate = new Date('Feb 08, 2023 23:59').getTime();
 	let now, timeleft, days, hours, minutes, seconds;
 
 	setInterval(() => {
